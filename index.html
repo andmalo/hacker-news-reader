@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO base -->
+    <title>Hacker News Reader — Le ultime notizie tech</title>
+    <meta name="description" content="Leggi e salva le ultime notizie da Hacker News. Aggiornato in tempo reale, sfogliabile e con i tuoi preferiti salvati." />
+    <meta name="keywords" content="hacker news, tech news, programmazione, startup, notizie tecnologia" />
+    <meta name="author" content="Hacker News Reader" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (anteprima su social e link) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hacker News Reader — Le ultime notizie tech" />
+    <meta property="og:description" content="Leggi e salva le ultime notizie da Hacker News. Aggiornato in tempo reale, sfogliabile e con i tuoi preferiti salvati." />
+    <meta property="og:locale" content="it_IT" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Hacker News Reader — Le ultime notizie tech" />
+    <meta name="twitter:description" content="Leggi e salva le ultime notizie da Hacker News. Aggiornato in tempo reale, sfogliabile e con i tuoi preferiti salvati." />
+
+    <!-- Icona e tema -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#ff6600" />
+
+    <link rel="stylesheet" href="/src/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Segui le ultime news da <span class="accent">Hacker News</span></h1>
+    </header>
+
+    <main>
+      <div id="error-message" role="alert" aria-live="assertive" style="display:none"></div>
+
+      <ul id="news-list" aria-label="Lista notizie"></ul>
+
+      <p id="counter" aria-live="polite"></p>
+
+      <p id="no-more-stories" style="display:none">Hai visto tutte le notizie disponibili</p>
+
+      <div class="actions">
+        <button id="load-more" aria-label="Carica altre notizie">Load more</button>
+        <button id="remove-last" aria-label="Rimuovi le ultime notizie caricate">Remove</button>
+        <button id="reset" aria-label="Azzera tutto e ricarica">Reset</button>
+      </div>
+
+      <section id="preferiti" aria-labelledby="preferiti-titolo">
+        <h2 id="preferiti-titolo">Preferiti</h2>
+        <ul id="favorites-list" aria-label="Lista preferiti"></ul>
+      </section>
+    </main>
+
+    <div id="toast" aria-live="polite"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
