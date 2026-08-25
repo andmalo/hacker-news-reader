@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = 'https://hacker-news.firebaseio.com/v0';
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://hacker-news.firebaseio.com/v0';
 
 // Lancia l'errore invece di swallowarlo: il chiamante deve sapere se l'API è irraggiungibile
 // e decidere come informare l'utente
