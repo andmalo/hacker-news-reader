@@ -79,3 +79,6 @@ Le notizie vengono recuperate dall'API pubblica di Hacker News:
 - `GET /v0/item/{id}.json` — dettagli di un singolo articolo
 
 Non richiede autenticazione né API key.
+
+
+   <!-- CI pipeline attiva -->
