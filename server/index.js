@@ -13,7 +13,7 @@ app.get('/v0/newstories.json', async (req, res) => {
   try {
     const risposta = await axios.get(`${HN_BASE_URL}/newstories.json`);
     res.json(risposta.data);
-  } catch (error) {
+  } catch {
     res.status(502).json({ error: 'Impossibile contattare Hacker News.' });
   }
 });
@@ -23,7 +23,7 @@ app.get('/v0/item/:id.json', async (req, res) => {
     const { id } = req.params;
     const risposta = await axios.get(`${HN_BASE_URL}/item/${id}.json`);
     res.json(risposta.data);
-  } catch (error) {
+  } catch {
     res.status(502).json({ error: 'Impossibile contattare Hacker News.' });
   }
 });
