@@ -82,3 +82,5 @@ Non richiede autenticazione né API key.
 
 
    <!-- CI pipeline attiva -->
+
+   Sito pubblico: https://gleaming-marshmallow-02fceb.netlify.app
