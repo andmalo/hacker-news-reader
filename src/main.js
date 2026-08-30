@@ -1,3 +1,4 @@
+import * as Sentry from '@sentry/browser';
 import './css/style.css';
 import './js/sentryTest.js';
 import { fetchNewStories, fetchStoryById } from './js/api.js';
@@ -17,6 +18,10 @@ import {
   updateLoadedCounter,
   renderFavoritesList,
 } from './js/ui.js';
+
+Sentry.init({
+  dsn: 'https://fd1662ef9ffbc9549741c531584f2ea9@o4512000494665728.ingest.de.sentry.io/4512000628949072',
+});
 
 // Flag per bloccare click multipli mentre una fetch è già in corso
 let isLoading = false;
