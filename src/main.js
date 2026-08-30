@@ -1,4 +1,5 @@
 import './css/style.css';
+import './js/sentryTest.js';
 import { fetchNewStories, fetchStoryById } from './js/api.js';
 import {
   storeAllIds, getNextPageIds, hasMoreStories, canGoBack,
